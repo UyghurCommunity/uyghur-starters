@@ -64,10 +64,10 @@ Success exits with 0; invalid arguments or a refused copy exit with 2. No existi
 
 ## Package availability
 
-The npm-ready CLI package is @uyghurcommunity/create v0.1.0. **npm registry publication is pending.** Run the source checkout directly today. Once the GitHub v0.1.0 release exists, you can install its pinned source archive:
+The CLI package is @uyghurcommunity/create v0.1.0. **npm registry publication is deferred.** Run the source checkout directly, or install the versioned GitHub release archive:
 
 ~~~sh
-npm install --global https://github.com/UyghurCommunity/uyghur-starters/archive/refs/tags/v0.1.0.tar.gz
+npm install --global https://github.com/UyghurCommunity/uyghur-starters/releases/download/v0.1.0/uyghurcommunity-create-0.1.0.tgz
 create-uyghur --template portfolio --dir ./my-portfolio
 ~~~
 
