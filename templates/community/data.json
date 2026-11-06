@@ -1,0 +1,66 @@
+{
+  "contentStatus": "illustrative-original-draft",
+  "projects": [
+    {
+      "id": "doppa",
+      "title": "Doppa",
+      "category": "مەدەنىيەت",
+      "description": "ئۇيغۇر دوپپىسىدىن ئىلھاملانغان رەقەملىك سەنئەت تەجرىبىسى.",
+      "url": "https://github.com/UyghurCommunity/doppa",
+      "symbol": "✧"
+    },
+    {
+      "id": "keyboard",
+      "title": "ئۇيغۇرچە كۇنۇپكا تاختىسى",
+      "category": "تىل",
+      "description": "تور بېتىگە قوشقىلى بولىدىغان ئۇيغۇرچە كىرگۈزۈش قورالى.",
+      "url": "https://github.com/UyghurCommunity/uyghur-keyboard",
+      "symbol": "ئا"
+    },
+    {
+      "id": "rtl",
+      "title": "RTL تەجرىبىخانىسى",
+      "category": "تور",
+      "description": "يۆنىلىش ۋە ئارىلاش يېزىق كۆرۈنۈشلىرىنى سىناش مىساللىرى.",
+      "url": "https://github.com/UyghurCommunity/uyghur-rtl-lab",
+      "symbol": "↔"
+    },
+    {
+      "id": "starters",
+      "title": "باشلاش قېلىپلىرى",
+      "category": "تور",
+      "description": "بىلوگ، قوللانما، ئىجادىيەت ۋە جەمئىيەت بېتى ئۈچۈن مۇستەقىل قېلىپلار.",
+      "url": "https://github.com/UyghurCommunity/uyghur-starters",
+      "symbol": "▱"
+    }
+  ],
+  "events": [
+    {
+      "id": "review",
+      "title": "بىر بەتنى بىللە تەكشۈرۈش",
+      "category": "تور",
+      "description": "كىچىك ئېكران، فوكۇس ۋە يېزىق يۆنىلىشىنى بىللە تەكشۈرۈش ئۈچۈن ئۈلگە پائالىيەت.",
+      "details": "بۇ پەقەت پائالىيەت كارتىسىنىڭ ئۈلگىسى. ۋاقىت، ئورۇن ياكى تىزىملىتىش بېكىتىلمىگەن. ئۆز جەمئىيىتىڭىزنىڭ ھەقىقىي ئۇچۇرىنى كىرگۈزۈڭ.",
+      "symbol": "⌕",
+      "status": "illustrative-unscheduled"
+    },
+    {
+      "id": "pattern",
+      "title": "نەقىش ۋە كود خاتىرىسى",
+      "category": "مەدەنىيەت",
+      "description": "رەقەملىك نەقىش سىنىقىنى تونۇشتۇرۇشقا ئىشلىتىلىدىغان ئۈلگە مەزمۇن.",
+      "details": "بۇ پائالىيەت ئېلانى ئەمەس. تەشكىللىگۈچى، ۋاقىت ۋە ئىشتراك ئۇچۇرىنى پەقەت ھەقىقىي پائالىيەت تەييار بولغاندا قوشۇڭ.",
+      "symbol": "✧",
+      "status": "illustrative-unscheduled"
+    },
+    {
+      "id": "word",
+      "title": "يېڭى بىر سۆز، ئېنىق بىر مەنبە",
+      "category": "تىل",
+      "description": "سۆزلۈك مەنبەسىنى قانداق كۆرسىتىش ھەققىدىكى ئۈلگە مۇزاكىرە تېمىسى.",
+      "details": "بۇ تەسەۋۋۇرىي مۇزاكىرە تېمىسى. تىل تەھرىرى ياكى جەمئىيەت ئەزالىرى قاتناشقانلىقى ھەققىدە دەۋا يوق.",
+      "symbol": "ئا",
+      "status": "illustrative-unscheduled"
+    }
+  ]
+}

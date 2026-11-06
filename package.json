@@ -1,0 +1,48 @@
+{
+  "name": "@uyghurcommunity/create",
+  "version": "0.1.0",
+  "description": "Four standalone Uyghur RTL website starters and a safe offline copy CLI.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "create-uyghur": "./bin/create-uyghur.js"
+  },
+  "exports": {
+    ".": "./src/create.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin",
+    "src",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node scripts/check.mjs",
+    "pack:check": "npm pack --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UyghurCommunity/uyghur-starters.git"
+  },
+  "homepage": "https://uyghurcommunity.github.io/uyghur-starters/",
+  "bugs": {
+    "url": "https://github.com/UyghurCommunity/uyghur-starters/issues"
+  },
+  "keywords": [
+    "uyghur",
+    "rtl",
+    "starter",
+    "templates",
+    "cli",
+    "vanilla"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
