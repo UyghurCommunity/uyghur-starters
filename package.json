@@ -1,7 +1,7 @@
 {
   "name": "@uyghurcommunity/create",
-  "version": "0.1.0",
-  "description": "Four standalone Uyghur RTL website starters and a safe offline copy CLI.",
+  "version": "0.2.0",
+  "description": "Four Uyghur RTL website starters and six source-based UI blocks with a safe offline installer.",
   "type": "module",
   "license": "MIT",
   "engines": {
@@ -12,12 +12,14 @@
   },
   "exports": {
     ".": "./src/create.js",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./ui": "./src/install-ui.js"
   },
   "files": [
     "bin",
     "src",
     "templates",
+    "registry",
     "README.md",
     "LICENSE"
   ],

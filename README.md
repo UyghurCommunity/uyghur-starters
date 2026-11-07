@@ -1,6 +1,6 @@
 # Uyghur Starters · ئۇيغۇرچە باشلاش قېلىپلىرى
 
-Four independent, buildless Uyghur RTL websites and a safe offline copying CLI, maintained by [UyghurCommunity](https://github.com/UyghurCommunity).
+Four independent, buildless Uyghur RTL websites, six standalone UI blocks, and a safe offline installer, maintained by [UyghurCommunity](https://github.com/UyghurCommunity).
 
 [Gallery and previews](https://uyghurcommunity.github.io/uyghur-starters/) · [Issues](https://github.com/UyghurCommunity/uyghur-starters/issues)
 
@@ -55,6 +55,8 @@ Each ZIP download in the gallery contains a complete standalone template. Extrac
 ~~~text
 create-uyghur --list
 create-uyghur --template <blog|docs|portfolio|community> --dir <new-relative-folder>
+create-uyghur --ui-list
+create-uyghur --ui <writing-field|dialog|combobox|dropdown|drawer|data-table> --dir <new-relative-folder>
 create-uyghur --help
 ~~~
 
@@ -64,14 +66,27 @@ Success exits with 0; invalid arguments or a refused copy exit with 2. No existi
 
 ## Package availability
 
-The CLI package is @uyghurcommunity/create v0.1.0. **npm registry publication is deferred.** Run the source checkout directly, or install the versioned GitHub release archive:
+The CLI package is @uyghurcommunity/create v0.2.0. **npm registry publication is deferred.** Run the source checkout directly, or install the versioned GitHub release archive after that release is available:
 
 ~~~sh
-npm install --global https://github.com/UyghurCommunity/uyghur-starters/releases/download/v0.1.0/uyghurcommunity-create-0.1.0.tgz
+npm install --global https://github.com/UyghurCommunity/uyghur-starters/releases/download/v0.2.0/uyghurcommunity-create-0.2.0.tgz
 create-uyghur --template portfolio --dir ./my-portfolio
 ~~~
 
-No npm registry install is claimed. The package includes all four complete templates.
+No npm registry install is claimed. The package includes all four complete templates and the six UI block snapshots.
+
+## Install a UI block · UI بۆلىكىنى قاچىلاش
+
+~~~sh
+node bin/create-uyghur.js --ui-list
+node bin/create-uyghur.js --ui writing-field --dir ./my-writing-demo
+cd my-writing-demo
+node server.mjs
+~~~
+
+The six allowlisted blocks are `writing-field`, `dialog`, `combobox`, `dropdown`, `drawer`, and `data-table`. Each is a complete Uyghur RTL HTML page with a local copy of the Uyghur UI v0.4.0 core modules, styles, font registration, licenses, and a local preview server. Edit the installed source files directly. These HTML blocks do not include React, npm dependencies, a package manager step, or remote registry loading.
+
+UI snapshots are bundled JSON files in `registry/`, with `registry:block` items and SHA256 content hashes. The installer validates every file path, case-insensitive collision, parent/file conflict, and digest before creating a destination. Existing files and directories, parent symlinks, absolute output paths, and traversal are refused. It never executes installed code. The browser can request the externally registered ALKATIP Basma font when a generated page is opened; no font binary is bundled.
 
 ## Customize a template
 
